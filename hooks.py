@@ -31,6 +31,8 @@ PATHS = hooks_handler.paths
 def endpoint_listener(endpoint):
     if endpoint in VALID_ENDPOINTS.keys():
         return VALID_ENDPOINTS[endpoint](request,PATHS[endpoint])
+    else:
+        abort(403)
 
                 
                 
