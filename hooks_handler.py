@@ -11,7 +11,7 @@ for i in range(len(paths.keys())):
     sys.path.insert(i,list(paths.values())[i])  
 
 
-#import the webhook listeners for all valid endpoints here
+#import the function to trigger on recieving the push notif.
 from github_hooks import github_listener 
 
 
