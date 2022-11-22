@@ -33,6 +33,7 @@ def endpoint_listener(endpoint):
         return VALID_ENDPOINTS[endpoint](request,PATHS[endpoint])
     else:
         abort(403)
+        return
 
                 
                 
